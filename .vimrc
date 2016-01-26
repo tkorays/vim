@@ -61,7 +61,6 @@ if(has("gui_runing"))
 else
     set t_Co=256
     set backspace=2
-    let g:airline_powerline_fonts = 1
 endif    
 
 
@@ -76,6 +75,25 @@ let NERDTreeWinPos=1
 let Tlist_Show_One_file=1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
 
 let g:vimwiki_list=[{'path':'~/vimwiki/default','path_html':'~/vimwiki/html','template_path':'~/vimwiki/template','template_default':'default','template_ext':'.html'}]
 
