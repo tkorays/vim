@@ -57,10 +57,11 @@ nmap <leader>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 "              GVim
 " ==================================
 if(has("gui_runing"))
-    set guifont=Consolas:h11
+    set guifont=Hack:h11
 else
     set t_Co=256
     set backspace=2
+    let g:airline_powerline_fonts = 1
 endif    
 
 
