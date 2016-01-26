@@ -73,6 +73,8 @@ call pathogen#infect()
 " Position of NERD & Tlist 
 let NERDTreeWinPos=1
 let Tlist_Show_One_file=1
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
 
 let g:vimwiki_list=[{'path':'~/vimwiki/default','path_html':'~/vimwiki/html','template_path':'~/vimwiki/template','template_default':'default','template_ext':'.html'}]
 
