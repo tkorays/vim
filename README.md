@@ -1,2 +1,2 @@
 # vim
-My Vim Configuration and notes
+Configuration and Note of Vim.
