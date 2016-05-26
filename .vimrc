@@ -35,22 +35,10 @@ nmap <Leader>3 3<C-w><C-w>
 nmap <Leader>4 4<C-w><C-w>
 nmap <Leader>5 5<C-w><C-w>
 nmap <Leader>j <C-w><C-w>
-nmap <leader>n <C-u>
-nmap <leader>m <C-d>
 
 nmap <leader>u :NERDTreeToggle<CR>
-nmap <Leader>l <C-]>
-nmap <leader>o <C-o>
 
 " cscope key map
-nmap <leader>s :cs find s <C-R>=expand("<cword>")<CR><CR>
-nmap <leader>g :cs find g <C-R>=expand("<cword>")<CR><CR>
-nmap <leader>c :cs find c <C-R>=expand("<cword>")<CR><CR>
-nmap <leader>t :cs find t <C-R>=expand("<cword>")<CR><CR>
-nmap <leader>e :cs find e <C-R>=expand("<cword>")<CR><CR>
-nmap <leader>f :cs find f <C-R>=expand("<cword>")<CR><CR>
-nmap <leader>i :cs find i ^<C-R>=expand("<cword>")<CR>$<CR>
-nmap <leader>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
 
 " ==================================
@@ -62,7 +50,6 @@ else
     set t_Co=256
     set backspace=2
 endif    
-
 
 " ==================================
 "        Config of Plugins
@@ -88,6 +75,8 @@ let g:airline_symbols.crypt = '🔒'
 let g:airline_symbols.branch = '⎇'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
+
+
 
 let g:vimwiki_list=[{'path':'~/vimwiki/default','path_html':'~/vimwiki/html','template_path':'~/vimwiki/template','template_default':'default','template_ext':'.html'}]
 
